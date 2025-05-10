@@ -1,3 +1,5 @@
+-- Recyclable and Low Fat Products
+
 create TABLE Products
 (	
   pruduct_id int primary key,
@@ -18,6 +20,8 @@ where low_fats ='Y' and recyclable ='Y'
 
 --------------------------------------------------------------------------------
 
+-- Find Customer Referee
+	
 create table customer
 (
 	id int primary key,
@@ -44,7 +48,8 @@ from customer
 where refree_id != 2
 
 ------------------------------------------------------------------
-
+--Big Countries
+	
 create TABLE worldranks
 (
   name varchar (30),
@@ -78,6 +83,9 @@ FROM worldranks
 where area >=3000000 or population >=250000
 
 ---------------------------------------------------------------------------
+
+-- Article Views I
+	
 create table authors
 (
 	article_id int,
@@ -105,6 +113,9 @@ where author_id = viewer_id
 order by author_id -- order by id asc
 
 -------------------------------------------------------------------------
+
+--Invalid Tweets
+
 drop table tweets
 create table tweets
 (
